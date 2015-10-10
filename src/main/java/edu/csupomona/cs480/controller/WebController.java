@@ -132,4 +132,11 @@ public class WebController {
         return modelAndView;
     }
 
+    /* This method returns a sample board */
+    @RequestMapping(value = "/board", method = RequestMethod.GET)
+    ModelAndView getBoard() {
+        ModelAndView model = new ModelAndView("board");
+        return model;
+    }
+
 }
